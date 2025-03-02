@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BAKE</title>
+
+    <!-- Font hỗ trợ hiển thị icon (FONT AWESOME) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+    <!-- Font chữ chính của web (FONT GOOGLE) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Oswald:wght@200..700&display=swap" rel="stylesheet">
+
+    <!-- Main CSS -->
+    <link rel="stylesheet" href="./css/index.css">
+</head>
+<body>
+    <!-- Phần Header -->
+    <header>
+        <div class="header_content">
+            <p>BAKE</p>
+            <nav>
+                <ul>
+                    <li class="active"><a href="#">HOME</a></li>
+                    <li><a href="#">ABOUT</a></li>
+                    <li><a href="#">SERVICE</a></li>
+                    <li><a href="#">GALLERY</a></li>
+                    <li><a href="#">CLIENTS</a></li>
+                    <li><a href="#">CONTACT</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Phần section -->
+    <section class="carousel">
+        <div class="carousel_content">
+            <h1>Best Bake Here</h1>
+            <p>Donec at massa nec sem eleifend fermentum.</p>
+            <button>LEARN MORE</button>
+        </div>
+    </section>
+
+    <!-- Phần Intro -->
+    <section class="intro">
+        <div class="intro_item intro_text">
+            <div>
+                <h3>Tradition</h3>
+                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor</p>
+            </div>
+        </div>
+
+        <div class="intro_item intro_ab1">
+            <img src="./img/ab1.jpg" alt="intro 1">
+        </div>
+
+        <div class="intro_item intro_text">
+            <div>
+                <h3>Creativity</h3>
+                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor</p>
+            </div>
+        </div>
+
+        <div class="intro_item intro_bake">
+            <div>
+                <h3>What We Bake Best For You</h3>
+                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolorL orem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor</p>
+            </div>
+        </div>
+
+        <div class="intro_item">
+            <img src="./img/ab2.jpg" alt="intro 2">
+        </div>
+
+        <div class="intro_item intro_text">
+            <div>
+                <h3>Quality</h3>
+                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor</p>
+            </div>
+        </div>
+
+        <div class="intro_item">
+            <img src="./img/ab3.jpg" alt="intro 3">
+        </div>
+
+        <div class="intro_item intro_text">
+            <div>
+                <h3>Tasty Cakes</h3>
+                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor</p>
+            </div>
+        </div>
+
+        <div class="intro_item intro_ab4">
+            <img src="./img/ab4.jpg" alt="intro 4">
+        </div>
+
+    </section>
+
+    <!-- Phần Number -->
+    <section class="number">
+        <div class="number_content">
+            <div class="number_item">
+                <p class="counter">3500</p>
+                <p>Coffee</p>
+            </div>
+            <div class="number_item">
+                <p class="counter">650</p>
+                <p>Happy Client</p>
+            </div>
+            <div class="number_item">
+                <p class="counter">10</p>
+                <p>Experience</p>
+            </div>
+            <div class="number_item">
+                <p class="counter">1010</p>
+                <p>Expert Worker</p>
+            </div>
+        </div>
+    </section>
+    <section class="service"></section>
+    <section class="gallery"></section>
+    <section class="team"></section>
+    <section class="feedback"></section>
+    <section class="contact"></section>
+
+    <!-- Thư viện tổng Jquery, giúp hỗ trợ chạy animation của các thư viện khác -->
+    <script
+    src="https://code.jquery.com/jquery-3.7.1.min.js"
+    integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
+    crossorigin="anonymous"></script>
+
+    <!-- Thư viện Waypoints -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.js"></script>
+
+    <!-- CountUp -->
+    <script src="./js/jquery.countup.js"></script>
+
+    <!-- Sử dụng hàm CountUp -->
+     <script>
+        $('.counter').countUp();
+     </script>
+     
+    <!-- Phần Footer -->
+    <footer></footer>
+</body>
+</html>
