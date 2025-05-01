@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,11 +12,17 @@
     <!-- Font chữ chính của web (FONT GOOGLE) -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Oswald:wght@200..700&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Oswald:wght@200..700&display=swap"
+        rel="stylesheet">
+
+    <!-- Thư viện Lightbox -->
+    <link rel="stylesheet" href="./css/lightbox.min.css">
 
     <!-- Main CSS -->
     <link rel="stylesheet" href="./css/index.css">
 </head>
+
 <body>
     <!-- Phần Header -->
     <header>
@@ -34,7 +41,7 @@
         </div>
     </header>
 
-    <!-- Phần section -->
+    <!-- Phần Carousel -->
     <section class="carousel">
         <div class="carousel_content">
             <h1>Best Bake Here</h1>
@@ -66,7 +73,8 @@
         <div class="intro_item intro_bake">
             <div>
                 <h3>What We Bake Best For You</h3>
-                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolorL orem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor</p>
+                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolorL orem
+                    ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor</p>
             </div>
         </div>
 
@@ -119,30 +127,245 @@
             </div>
         </div>
     </section>
-    <section class="service"></section>
-    <section class="gallery"></section>
-    <section class="team"></section>
+
+    <!-- Phần Service -->
+    <section class="service">
+        <h2>OUR SERVICE</h2>
+        <div class="service_content">
+            <div class="service_item">
+                <i class="fa fa-adjust"></i>
+                <h3>Tasty Cakes</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                <button>Learn More</button>
+            </div>
+            <div class="service_item">
+                <i class="fa fa-snowflake"></i>
+                <h3>Creativity</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                <button>Learn More</button>
+            </div>
+            <div class="service_item">
+                <i class="fa fa-chart-pie"></i>
+                <h3>Tradition</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                <button>Learn More</button>
+            </div>
+            <div class="service_item">
+                <i class="fab fa-slideshare"></i>
+                <h3>Quality</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                <button>Learn More</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Phần Gallery -->
+    <section class="gallery">
+        <h2>OUR GALLERY</h2>
+        <div class="gallery_content">
+            <figure class="gallery_item gallery_g1"> <!-- Khung hình -->
+                <!-- Dùng thẻ a để apply thư viện popup vào -->
+                <a href="./img/g1.jpg" data-lightbox="gallery">
+                    <img src="./img/g1.jpg" alt="gallery 1">
+                    <figcaption class="gallery_overlay">
+                        <!-- Do thiết kế chữ "Our" nhạt hơn nên phải tách "Our" và "Gallery" thành 2 thành phần để design riêng -->
+                        <!-- Dùng thẻ span vì span là inline nên không sợ chữ "Our" chiếm hết hàng và đẩy "Gallery" xuống hàng -->
+                        <h3><span>OUR</span>GALLERY</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                    </figcaption>
+                </a>
+            </figure>
+            <figure class="gallery_item"> <!-- Khung hình -->
+                <a href="./img/g2.jpg" data-lightbox="gallery">
+                    <img src="./img/g2.jpg" alt="gallery 2">
+                    <figcaption class="gallery_overlay">
+                        <!-- Do thiết kế chữ "Our" nhạt hơn nên phải tách "Our" và "Gallery" thành 2 thành phần để design riêng -->
+                        <!-- Dùng thẻ span vì span là inline nên không sợ chữ "Our" chiếm hết hàng và đẩy "Gallery" xuống hàng -->
+                        <h3><span>OUR</span>GALLERY</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                    </figcaption>
+                </a>
+            </figure>
+            <figure class="gallery_item"> <!-- Khung hình -->
+                <a href="./img/g3.jpg" data-lightbox="gallery">
+                    <img src="./img/g3.jpg" alt="gallery 3">
+                    <figcaption class="gallery_overlay">
+                        <!-- Do thiết kế chữ "Our" nhạt hơn nên phải tách "Our" và "Gallery" thành 2 thành phần để design riêng -->
+                        <!-- Dùng thẻ span vì span là inline nên không sợ chữ "Our" chiếm hết hàng và đẩy "Gallery" xuống hàng -->
+                        <h3><span>OUR</span>GALLERY</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                    </figcaption>
+                </a>
+            </figure>
+            <figure class="gallery_item">
+                <a href="./img/g4.jpg" data-lightbox="gallery">
+                    <img src="./img/g4.jpg" alt="gallery 4">
+                    <figcaption class="gallery_overlay">
+                        <!-- Do thiết kế chữ "Our" nhạt hơn nên phải tách "Our" và "Gallery" thành 2 thành phần để design riêng -->
+                        <!-- Dùng thẻ span vì span là inline nên không sợ chữ "Our" chiếm hết hàng và đẩy "Gallery" xuống hàng -->
+                        <h3><span>OUR</span>GALLERY</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                    </figcaption>
+                </a>
+            </figure>
+            <figure class="gallery_item"> <!-- Khung hình -->
+                <a href="./img/g5.jpg" data-lightbox="gallery">
+                    <img src="./img/g5.jpg" alt="gallery 5">
+                    <figcaption class="gallery_overlay">
+                        <!-- Do thiết kế chữ "Our" nhạt hơn nên phải tách "Our" và "Gallery" thành 2 thành phần để design riêng -->
+                        <!-- Dùng thẻ span vì span là inline nên không sợ chữ "Our" chiếm hết hàng và đẩy "Gallery" xuống hàng -->
+                        <h3><span>OUR</span>GALLERY</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                    </figcaption>
+                </a>
+            </figure>
+            <figure class="gallery_item gallery_g6"> <!-- Khung hình -->
+                <a href="./img/g6.jpg" data-lightbox="gallery">
+                    <img src="./img/g6.jpg" alt="gallery 6">
+                    <figcaption class="gallery_overlay">
+                        <!-- Do thiết kế chữ "Our" nhạt hơn nên phải tách "Our" và "Gallery" thành 2 thành phần để design riêng -->
+                        <!-- Dùng thẻ span vì span là inline nên không sợ chữ "Our" chiếm hết hàng và đẩy "Gallery" xuống hàng -->
+                        <h3><span>OUR</span>GALLERY</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                    </figcaption>
+                </a>
+            </figure>
+        </div>
+
+    </section>
+
+    <!-- Phần Team -->
+    <section class="team">
+        <h2>BAKE TEAM</h2>
+        <div class="team_content">
+            <div class="team_item">
+                <img src="./img/t1.jpg" alt="team 1">
+                <div class="team_title">
+                    <h3>John Simon</h3>
+                    <p>-Cake Maker</p>
+                </div>
+                <div class="team_detail">
+                    <h3>John Simon</h3>
+                    <p class="team_text">-Cake Maker</p>
+                    <p>Mauris tincidunt dolor eget diam dapibus vitae finibusnisl friuisque pretiuam</p>
+                    <div class="team_social">
+                        <i class="fa-brands fa-facebook-f"></i>
+                        <i class="fa-brands fa-twitter"></i>
+                        <i class="fa-brands fa-google-plus-g"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="team_item">
+                <img src="./img/t2.jpg" alt="team 2">
+                <div class="team_title">
+                    <h3>John Simon</h3>
+                    <p>-Cake Maker</p>
+                </div>
+                <div class="team_detail">
+                    <h3>John Simon</h3>
+                    <p class="team_text">-Cake Maker</p>
+                    <p>Mauris tincidunt dolor eget diam dapibus vitae finibusnisl friuisque pretiuam</p>
+                    <div class="team_social">
+                        <i class="fa-brands fa-facebook-f"></i>
+                        <i class="fa-brands fa-twitter"></i>
+                        <i class="fa-brands fa-google-plus-g"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="team_item">
+                <img src="./img/t3.jpg" alt="team 3">
+                <div class="team_title">
+                    <h3>John Simon</h3>
+                    <p>-Cake Maker</p>
+                </div>
+                <div class="team_detail">
+                    <h3>John Simon</h3>
+                    <p class="team_text">-Cake Maker</p>
+                    <p>Mauris tincidunt dolor eget diam dapibus vitae finibusnisl friuisque pretiuam</p>
+                    <div class="team_social">
+                        <i class="fa-brands fa-facebook-f"></i>
+                        <i class="fa-brands fa-twitter"></i>
+                        <i class="fa-brands fa-google-plus-g"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="team_item">
+                <img src="./img/t4.jpg" alt="team 4">
+                <div class="team_title">
+                    <h3>John Simon</h3>
+                    <p>-Cake Maker</p>
+                </div>
+                <div class="team_detail">
+                    <h3>John Simon</h3>
+                    <p class="team_text">-Cake Maker</p>
+                    <p>Mauris tincidunt dolor eget diam dapibus vitae finibusnisl friuisque pretiuam</p>
+                    <div class="team_social">
+                        <i class="fa-brands fa-facebook-f"></i>
+                        <i class="fa-brands fa-twitter"></i>
+                        <i class="fa-brands fa-google-plus-g"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="team_item">
+                <img src="./img/t1.jpg" alt="team 5">
+                <div class="team_title">
+                    <h3>John Simon</h3>
+                    <p>-Cake Maker</p>
+                </div>
+                <div class="team_detail">
+                    <h3>John Simon</h3>
+                    <p class="team_text">-Cake Maker</p>
+                    <p>Mauris tincidunt dolor eget diam dapibus vitae finibusnisl friuisque pretiuam</p>
+                    <div class="team_social">
+                        <i class="fa-brands fa-facebook-f"></i>
+                        <i class="fa-brands fa-twitter"></i>
+                        <i class="fa-brands fa-google-plus-g"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="team_item">
+                <img src="./img/t2.jpg" alt="team 6">
+                <div class="team_title">
+                    <h3>John Simon</h3>
+                    <p>-Cake Maker</p>
+                </div>
+                <div class="team_detail">
+                    <h3>John Simon</h3>
+                    <p class="team_text">-Cake Maker</p>
+                    <p>Mauris tincidunt dolor eget diam dapibus vitae finibusnisl friuisque pretiuam</p>
+                    <div class="team_social">
+                        <i class="fa-brands fa-facebook-f"></i>
+                        <i class="fa-brands fa-twitter"></i>
+                        <i class="fa-brands fa-google-plus-g"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <section class="feedback"></section>
     <section class="contact"></section>
 
+    <!-- Phần Footer -->
+    <footer></footer>
+
     <!-- Thư viện tổng Jquery, giúp hỗ trợ chạy animation của các thư viện khác -->
-    <script
-    src="https://code.jquery.com/jquery-3.7.1.min.js"
-    integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
-    crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+        integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
 
     <!-- Thư viện Waypoints -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.js"></script>
 
-    <!-- CountUp -->
+    <!-- Thư viện CountUp -->
     <script src="./js/jquery.countup.js"></script>
 
     <!-- Sử dụng hàm CountUp -->
-     <script>
+    <script>
         $('.counter').countUp();
-     </script>
-     
-    <!-- Phần Footer -->
-    <footer></footer>
+    </script>
+
+    <!-- Thư viện Popup -->
+    <script src="./js/lightbox.min.js"></script>
 </body>
+
 </html>

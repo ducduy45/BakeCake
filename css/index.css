@@ -37,6 +37,14 @@ button:hover{
     border-color: #ff0e83;
 }
 
+h2{
+    font-size: 3rem;
+    font-weight: 700;
+    margin-bottom: 3rem;
+    text-align: center;
+    letter-spacing: 2px;
+}
+
 /* HEADER */
 
 header{
@@ -207,4 +215,260 @@ header{
     font-weight: 700;
     letter-spacing: 4px;
     margin: 24px 0;
+}
+
+/* SERVICE */
+.service{
+    background-image: url(../img/s1.jpg);
+    background-size: cover;
+    text-align: center;
+    padding: 70px 0;
+}
+
+.service h2{
+    color: white;
+}
+
+.service_content{
+    width: 70%;
+    margin: 0 auto;
+    display: flex;
+    padding: 0 20px
+}
+
+.service_item{
+    padding: 0 20px;
+}
+
+.service_item i{
+    width: 105px;
+    height: 105px;
+    border: 1px solid #4e2a84;
+    border-radius: 50%;
+    background-color: white;
+    color: #4e2a84;
+    font-size: 3.75rem;
+    /* Nếu thẻ chỉ có 1 hàng chữ thì xét line height bằng chiều cao thì sẽ auto canh giữa, lưu ý chỉ sử dụng khi thẻ chỉ có 1 hàng chữ, trong ví dụ đây chỉ có 1 icon*/
+    line-height: 105px;
+    transition: all .5s;
+}
+
+.service_item h3{
+    font-size: 1.5rem;
+    font-weight: 500;
+    margin: 17px 0;
+}
+
+.service_item p{
+    font-size: 0.875rem;
+    line-height: 25px;
+    padding-bottom: 12px;
+}
+
+.service_item button{
+    padding: 12px 27px;
+    border-width: 2px;
+}
+
+.service_item:hover i{
+    color: #ff0e83;
+}
+
+/* GALERRY */
+.gallery_content{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+
+    /* Khoảng cách giữa các khung hình, khai báo gap ở phần display grid */
+    gap: 30px;
+    padding: 0 15px;
+}
+
+.gallery_g1{
+    grid-column: 1 / span 2;
+}
+
+.gallery_g6{
+    grid-column: 3 / span 2;
+}
+
+.gallery_item img{
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+
+.gallery{
+    padding: 70px 0;
+}
+
+.gallery_item{
+    /* Thẻ cha nên để relative */
+    position: relative;
+    overflow: hidden;
+}
+
+/* Tạo 1 màn background mờ phủ lên hình */
+/* Cần di chuyển thẻ con phủ lên thẻ cha thì dùng absolute */
+.gallery_overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(48, 132, 163, 0.2);
+    color: white;
+    padding: 38px 28px;
+    text-align: right;
+}
+
+.gallery_overlay p{
+    position: absolute;
+    bottom: 38px;
+    right: 28px;
+    font-size: 0.75rem;
+    transform: translateY(50px);
+    opacity: 0;
+    transition: all .5s;
+}
+
+.gallery_overlay h3{
+    font-size: 1.875rem;
+    /* Đẩy phần h3 xuống 20px để khi move hover vào nó chạy lên vị trí ban đầu*/
+    transform: translateY(20px);
+    transition: all .5s;
+}
+
+.gallery_overlay h3 span{
+    font-weight: 300;
+}
+
+.gallery_overlay h3::after{
+    content: "";
+    width: 100%;
+    height: 5px;
+    background-color: white;
+    /*Vì after là thẻ inline nên không xét được kích thước của thanh ngang, phải biến thành thẻ block mới đẩy nó xuống hàng và chỉnh đc kích thước */
+    display: block;
+    margin-top: 10px;
+    transform: translateY(20px);
+    transition: all .5s;
+    opacity: 0;
+}
+
+.gallery_item:hover .gallery_overlay h3{
+    transform: translateY(0);
+}
+
+.gallery_item:hover .gallery_overlay h3::after{
+    transform: translateY(0);
+    opacity: 1;
+}
+.gallery_item:hover .gallery_overlay p{
+    transform: translateY(0);
+    opacity: 1;
+}
+
+/* TEAM */
+.team{
+    background-color: #4e2a84;
+    padding: 70px 0;
+}
+
+.team h2{
+    color: white;
+}
+
+.team_content{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    
+    /* Trên dưới 25 trái phải 30 */
+    gap: 25px 30px;
+    width: 75%;
+    margin: 0 auto;
+}
+
+.team_item img{
+    width: 100%;
+    display: block;
+}
+
+.team_item{
+    position: relative;
+}
+
+.team_title{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background-color: #ff0e83;
+    color: white;
+    width: 100%;
+    padding: 30px;
+    opacity: 1;
+    transition: all .5s;
+}
+
+.team_title h3{
+    font-size: 1.3rem;
+}
+
+.team_title p{
+    font-size: 0.875rem;
+    line-height: 28px;
+}
+
+.team_detail{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    color: white;
+    padding: 100px 40px;
+    opacity: 0;
+    transition: all .5s;
+}
+
+.team_detail h3{
+    font-size: 1.3rem;
+    color: #ff0e83;
+}
+
+.team_text{
+    margin: 8px 0;
+}
+
+.team_item p{
+    font-size: 0.875rem;
+    line-height: 28px;
+}
+
+.team_social{
+    margin-top: 24px;
+}
+
+.team_social i{
+    width: 37px;
+    height: 37px;
+    border: 1.5px solid rgba(255, 255, 255, 0.5);
+    line-height: 37px;
+    text-align: center;
+    margin: 0 5px;
+    transition: all .5s;
+}
+
+.team_social i:hover{
+    color: #ff0e83;
+    border-color: #ff0e83;
+}
+
+.team_item:hover .team_title{
+    opacity: 0;
+}
+
+.team_item:hover .team_detail{
+    opacity: 1;
 }
